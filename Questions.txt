@@ -1,0 +1,14 @@
+54:04
+During Lesson 3, and after we had done some re-factoring we created a test using a regular expression :-
+
+it "should have a non-blank body" do
+    get 'home'
+    response.body.should_not =~ /<body>\s*<\/body>/
+end
+
+which was placed within the  describe "GET 'home'" do block
+
+Question, whilst I cascaded this test to the other blocks, the tutorial suggest that i do not need to? because of the refactoring
+I dont quite understand ??
+
+
